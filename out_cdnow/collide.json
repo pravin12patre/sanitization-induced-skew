@@ -1,0 +1,53 @@
+{
+ "n_entities": 23502,
+ "cells": {
+  "12_bits": {
+   "entities_sharing_id": 0.99634,
+   "birthday_expected": 0.99678,
+   "frequency_match": 0.0037,
+   "monetary_match": 0.0037,
+   "offline_auc": 0.6255,
+   "production_auc": 0.7702
+  },
+  "16_bits": {
+   "entities_sharing_id": 0.30346,
+   "birthday_expected": 0.30135,
+   "frequency_match": 0.6966,
+   "monetary_match": 0.6966,
+   "offline_auc": 0.7812,
+   "production_auc": 0.8073
+  },
+  "20_bits": {
+   "entities_sharing_id": 0.02251,
+   "birthday_expected": 0.02216,
+   "frequency_match": 0.9775,
+   "monetary_match": 0.9775,
+   "offline_auc": 0.8175,
+   "production_auc": 0.8195
+  },
+  "24_bits": {
+   "entities_sharing_id": 0.00179,
+   "birthday_expected": 0.0014,
+   "frequency_match": 0.9982,
+   "monetary_match": 0.9982,
+   "offline_auc": 0.8173,
+   "production_auc": 0.8175
+  },
+  "32_bits": {
+   "entities_sharing_id": 0.0,
+   "birthday_expected": 1e-05,
+   "frequency_match": 1.0,
+   "monetary_match": 1.0,
+   "offline_auc": 0.8194,
+   "production_auc": 0.8194
+  },
+  "64_bits": {
+   "entities_sharing_id": 0.0,
+   "birthday_expected": 0.0,
+   "frequency_match": 1.0,
+   "monetary_match": 1.0,
+   "offline_auc": 0.8194,
+   "production_auc": 0.8194
+  }
+ }
+}

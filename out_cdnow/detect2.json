@@ -1,0 +1,46 @@
+{
+ "code/evidently": {
+  "harmful_settings": 16,
+  "plain": 12,
+  "raw": 12,
+  "matched": 10,
+  "raw_miss": 12,
+  "matched_miss": 10,
+  "harmless_settings": 0,
+  "matched_alerts_on_harmless": 0,
+  "raw_alerts_on_harmless": 0
+ },
+ "code/tfdv": {
+  "harmful_settings": 16,
+  "plain": 8,
+  "raw": 12,
+  "matched": 10,
+  "raw_miss": 12,
+  "matched_miss": 10,
+  "harmless_settings": 0,
+  "matched_alerts_on_harmless": 0,
+  "raw_alerts_on_harmless": 0
+ },
+ "sanitization-dependent/evidently": {
+  "harmful_settings": 4,
+  "plain": 4,
+  "raw": 0,
+  "matched": 4,
+  "raw_miss": 0,
+  "matched_miss": 4,
+  "harmless_settings": 4,
+  "matched_alerts_on_harmless": 0,
+  "raw_alerts_on_harmless": 0
+ },
+ "sanitization-dependent/tfdv": {
+  "harmful_settings": 4,
+  "plain": 2,
+  "raw": 0,
+  "matched": 2,
+  "raw_miss": 0,
+  "matched_miss": 4,
+  "harmless_settings": 4,
+  "matched_alerts_on_harmless": 0,
+  "raw_alerts_on_harmless": 0
+ }
+}

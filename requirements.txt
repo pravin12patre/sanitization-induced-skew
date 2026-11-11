@@ -1,0 +1,10 @@
+numpy==2.4.6
+pandas==2.3.3
+scipy==1.18.1
+scikit-learn==1.9.1
+pyarrow==25.0.1
+pyreadr==0.5.9
+matplotlib==3.11.2
+evidently==0.7.23
+tensorflow==2.21.0
+tensorflow-data-validation==1.21.0

@@ -1,0 +1,150 @@
+{
+ "tau": 0.1,
+ "truth": {
+  "null": {
+   "recency_days": false,
+   "frequency": false,
+   "monetary": false,
+   "freq_90d": false,
+   "spend_90d": false,
+   "tenure_days": false,
+   "weekend_share": false,
+   "q4_share": false,
+   "last_dow": false
+  },
+  "window60": {
+   "recency_days": false,
+   "frequency": false,
+   "monetary": false,
+   "freq_90d": true,
+   "spend_90d": true,
+   "tenure_days": false,
+   "weekend_share": false,
+   "q4_share": false,
+   "last_dow": false
+  },
+  "wrong_column": {
+   "recency_days": false,
+   "frequency": false,
+   "monetary": true,
+   "freq_90d": false,
+   "spend_90d": true,
+   "tenure_days": false,
+   "weekend_share": false,
+   "q4_share": false,
+   "last_dow": false
+  },
+  "retention365": {
+   "recency_days": true,
+   "frequency": true,
+   "monetary": true,
+   "freq_90d": true,
+   "spend_90d": true,
+   "tenure_days": true,
+   "weekend_share": true,
+   "q4_share": true,
+   "last_dow": true
+  },
+  "tz_shift": {
+   "recency_days": true,
+   "frequency": false,
+   "monetary": false,
+   "freq_90d": false,
+   "spend_90d": false,
+   "tenure_days": true,
+   "weekend_share": false,
+   "q4_share": false,
+   "last_dow": false
+  }
+ },
+ "summary": {
+  "tfdv/plain": {
+   "tp": 39,
+   "fp": 42,
+   "fn": 21,
+   "precision": 0.481,
+   "recall": 0.65,
+   "bugs_caught": "14/16",
+   "bugs_distinguishable": "8/16",
+   "observed_case_distinguishable": "1/4",
+   "bug_free_scenarios_alerting": "3/4"
+  },
+  "tfdv/rules": {
+   "tp": 14,
+   "fp": 0,
+   "fn": 46,
+   "precision": 1.0,
+   "recall": 0.233,
+   "bugs_caught": "8/16",
+   "bugs_distinguishable": "8/16",
+   "observed_case_distinguishable": "1/4",
+   "bug_free_scenarios_alerting": "0/4"
+  },
+  "tfdv/replay": {
+   "tp": 30,
+   "fp": 12,
+   "fn": 30,
+   "precision": 0.714,
+   "recall": 0.5,
+   "bugs_caught": "12/16",
+   "bugs_distinguishable": "12/16",
+   "observed_case_distinguishable": "3/4",
+   "bug_free_scenarios_alerting": "2/4"
+  },
+  "tfdv/matched": {
+   "tp": 25,
+   "fp": 0,
+   "fn": 35,
+   "precision": 1.0,
+   "recall": 0.417,
+   "bugs_caught": "10/16",
+   "bugs_distinguishable": "10/16",
+   "observed_case_distinguishable": "2/4",
+   "bug_free_scenarios_alerting": "0/4"
+  },
+  "evidently/plain": {
+   "tp": 44,
+   "fp": 40,
+   "fn": 16,
+   "precision": 0.524,
+   "recall": 0.733,
+   "bugs_caught": "14/16",
+   "bugs_distinguishable": "12/16",
+   "observed_case_distinguishable": "3/4",
+   "bug_free_scenarios_alerting": "3/4"
+  },
+  "evidently/rules": {
+   "tp": 19,
+   "fp": 0,
+   "fn": 41,
+   "precision": 1.0,
+   "recall": 0.317,
+   "bugs_caught": "8/16",
+   "bugs_distinguishable": "8/16",
+   "observed_case_distinguishable": "1/4",
+   "bug_free_scenarios_alerting": "0/4"
+  },
+  "evidently/replay": {
+   "tp": 30,
+   "fp": 4,
+   "fn": 30,
+   "precision": 0.882,
+   "recall": 0.5,
+   "bugs_caught": "10/16",
+   "bugs_distinguishable": "10/16",
+   "observed_case_distinguishable": "2/4",
+   "bug_free_scenarios_alerting": "1/4"
+  },
+  "evidently/matched": {
+   "tp": 31,
+   "fp": 0,
+   "fn": 29,
+   "precision": 1.0,
+   "recall": 0.517,
+   "bugs_caught": "10/16",
+   "bugs_distinguishable": "10/16",
+   "observed_case_distinguishable": "2/4",
+   "bug_free_scenarios_alerting": "0/4"
+  }
+ }
+}

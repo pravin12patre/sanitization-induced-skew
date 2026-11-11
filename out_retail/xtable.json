@@ -1,0 +1,21 @@
+{
+ "share_domestic_online": 0.9186,
+ "consistent": {
+  "is_domestic_match": 1.0,
+  "rows_in_matching_key_epoch": 1.0,
+  "offline_auc": 0.8047,
+  "production_auc": 0.8047
+ },
+ "format_mismatch": {
+  "is_domestic_match": 0.0814,
+  "rows_in_matching_key_epoch": 0.0,
+  "offline_auc": 0.8055,
+  "production_auc": 0.8055
+ },
+ "stale_quarterly": {
+  "is_domestic_match": 0.364,
+  "rows_in_matching_key_epoch": 0.3074,
+  "offline_auc": 0.8056,
+  "production_auc": 0.8056
+ }
+}

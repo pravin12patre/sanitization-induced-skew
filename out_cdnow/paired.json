@@ -1,0 +1,37 @@
+{
+ "rotate_incremental_monthly": {
+  "production_auc_drop_vs_baseline": [
+   0.0055,
+   0.0035,
+   0.0078
+  ]
+ },
+ "rotate_incremental_weekly": {
+  "production_auc_drop_vs_baseline": [
+   0.0127,
+   0.0068,
+   0.0173
+  ]
+ },
+ "shift_-100": {
+  "production_auc_drop_vs_baseline": [
+   0.003,
+   -0.0007,
+   0.0073
+  ]
+ },
+ "observed_rotate_incr+shift_-100": {
+  "production_auc_drop_vs_baseline": [
+   0.0082,
+   0.0052,
+   0.0108
+  ]
+ },
+ "observed+unshifted_cutoff": {
+  "production_auc_drop_vs_baseline": [
+   0.1932,
+   0.1053,
+   0.3234
+  ]
+ }
+}

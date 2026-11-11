@@ -1,0 +1,479 @@
+{
+ "n_test_customers": 23502,
+ "bootstrap_B": 200,
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "cells": {
+  "baseline": {
+   "offline_auc": [
+    0.8188,
+    0.8122,
+    0.8248
+   ],
+   "production_auc": [
+    0.8188,
+    0.8122,
+    0.8248
+   ],
+   "gap": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "leak_rate": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "rotate_incremental": {
+   "offline_auc": [
+    0.7994,
+    0.7929,
+    0.8071
+   ],
+   "production_auc": [
+    0.8133,
+    0.8068,
+    0.8192
+   ],
+   "gap": [
+    -0.014,
+    -0.0177,
+    -0.0112
+   ],
+   "leak_rate": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "shift_-100": {
+   "offline_auc": [
+    0.8187,
+    0.8122,
+    0.8252
+   ],
+   "production_auc": [
+    0.8158,
+    0.8084,
+    0.8225
+   ],
+   "gap": [
+    0.0029,
+    0.0007,
+    0.0053
+   ],
+   "leak_rate": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "shift_-100_unshifted_cutoff": {
+   "offline_auc": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "production_auc": [
+    0.7101,
+    0.7014,
+    0.72
+   ],
+   "gap": [
+    0.2899,
+    0.28,
+    0.2986
+   ],
+   "leak_rate": [
+    0.1856,
+    0.1821,
+    0.1889
+   ]
+  },
+  "observed_rotate_incr+shift_-100": {
+   "offline_auc": [
+    0.7964,
+    0.7894,
+    0.8048
+   ],
+   "production_auc": [
+    0.8106,
+    0.8038,
+    0.8176
+   ],
+   "gap": [
+    -0.0143,
+    -0.0184,
+    -0.0092
+   ],
+   "leak_rate": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "observed+unshifted_cutoff": {
+   "offline_auc": [
+    0.9997,
+    0.9996,
+    0.9998
+   ],
+   "production_auc": [
+    0.6256,
+    0.4999,
+    0.7146
+   ],
+   "gap": [
+    0.3741,
+    0.2851,
+    0.4997
+   ],
+   "leak_rate": [
+    0.1856,
+    0.1821,
+    0.1889
+   ]
+  }
+ },
+ "shift_sweep": {
+  "-1": {
+   "shifted": {
+    "leak_rate": 0.0,
+    "offline_auc": 0.8188,
+    "production_auc": 0.8159,
+    "match": {
+     "recency_days": 1.0,
+     "frequency": 1.0,
+     "monetary": 1.0,
+     "freq_90d": 1.0,
+     "spend_90d": 1.0,
+     "tenure_days": 1.0,
+     "weekend_share": 0.6015,
+     "q4_share": 0.9896,
+     "last_dow": 0.0
+    }
+   },
+   "unshifted": {
+    "leak_rate": 0.0036,
+    "offline_auc": 0.8201,
+    "production_auc": 0.8146,
+    "match": {
+     "recency_days": 0.0001,
+     "frequency": 0.9964,
+     "monetary": 0.9964,
+     "freq_90d": 0.9905,
+     "spend_90d": 0.9905,
+     "tenure_days": 0.0,
+     "weekend_share": 0.6005,
+     "q4_share": 0.9887,
+     "last_dow": 0.0006
+    }
+   }
+  },
+  "-7": {
+   "shifted": {
+    "leak_rate": 0.0,
+    "offline_auc": 0.82,
+    "production_auc": 0.8195,
+    "match": {
+     "recency_days": 1.0,
+     "frequency": 1.0,
+     "monetary": 1.0,
+     "freq_90d": 1.0,
+     "spend_90d": 1.0,
+     "tenure_days": 1.0,
+     "weekend_share": 1.0,
+     "q4_share": 0.9227,
+     "last_dow": 1.0
+    }
+   },
+   "unshifted": {
+    "leak_rate": 0.0231,
+    "offline_auc": 0.8357,
+    "production_auc": 0.8174,
+    "match": {
+     "recency_days": 0.0006,
+     "frequency": 0.9769,
+     "monetary": 0.9769,
+     "freq_90d": 0.9401,
+     "spend_90d": 0.938,
+     "tenure_days": 0.0,
+     "weekend_share": 0.985,
+     "q4_share": 0.9184,
+     "last_dow": 0.9808
+    }
+   }
+  },
+  "-28": {
+   "shifted": {
+    "leak_rate": 0.0,
+    "offline_auc": 0.8208,
+    "production_auc": 0.8199,
+    "match": {
+     "recency_days": 1.0,
+     "frequency": 1.0,
+     "monetary": 1.0,
+     "freq_90d": 1.0,
+     "spend_90d": 1.0,
+     "tenure_days": 1.0,
+     "weekend_share": 1.0,
+     "q4_share": 0.6842,
+     "last_dow": 1.0
+    }
+   },
+   "unshifted": {
+    "leak_rate": 0.0779,
+    "offline_auc": 0.8833,
+    "production_auc": 0.8146,
+    "match": {
+     "recency_days": 0.0013,
+     "frequency": 0.9221,
+     "monetary": 0.9221,
+     "freq_90d": 0.8182,
+     "spend_90d": 0.8027,
+     "tenure_days": 0.0,
+     "weekend_share": 0.9507,
+     "q4_share": 0.6762,
+     "last_dow": 0.9348
+    }
+   }
+  },
+  "-30": {
+   "shifted": {
+    "leak_rate": 0.0,
+    "offline_auc": 0.8199,
+    "production_auc": 0.8165,
+    "match": {
+     "recency_days": 1.0,
+     "frequency": 1.0,
+     "monetary": 1.0,
+     "freq_90d": 1.0,
+     "spend_90d": 1.0,
+     "tenure_days": 1.0,
+     "weekend_share": 0.3585,
+     "q4_share": 0.6585,
+     "last_dow": 0.0
+    }
+   },
+   "unshifted": {
+    "leak_rate": 0.0824,
+    "offline_auc": 0.8872,
+    "production_auc": 0.8125,
+    "match": {
+     "recency_days": 0.0011,
+     "frequency": 0.9176,
+     "monetary": 0.9176,
+     "freq_90d": 0.81,
+     "spend_90d": 0.7932,
+     "tenure_days": 0.0,
+     "weekend_share": 0.3449,
+     "q4_share": 0.6504,
+     "last_dow": 0.0113
+    }
+   }
+  },
+  "-91": {
+   "shifted": {
+    "leak_rate": 0.0,
+    "offline_auc": 0.8208,
+    "production_auc": 0.82,
+    "match": {
+     "recency_days": 1.0,
+     "frequency": 1.0,
+     "monetary": 1.0,
+     "freq_90d": 1.0,
+     "spend_90d": 1.0,
+     "tenure_days": 1.0,
+     "weekend_share": 1.0,
+     "q4_share": 0.2596,
+     "last_dow": 1.0
+    }
+   },
+   "unshifted": {
+    "leak_rate": 0.1763,
+    "offline_auc": 1.0,
+    "production_auc": 0.6962,
+    "match": {
+     "recency_days": 0.0016,
+     "frequency": 0.8237,
+     "monetary": 0.8237,
+     "freq_90d": 0.6661,
+     "spend_90d": 0.6212,
+     "tenure_days": 0.0,
+     "weekend_share": 0.8904,
+     "q4_share": 0.2479,
+     "last_dow": 0.8524
+    }
+   }
+  },
+  "-100": {
+   "shifted": {
+    "leak_rate": 0.0,
+    "offline_auc": 0.8194,
+    "production_auc": 0.8169,
+    "match": {
+     "recency_days": 1.0,
+     "frequency": 1.0,
+     "monetary": 1.0,
+     "freq_90d": 1.0,
+     "spend_90d": 1.0,
+     "tenure_days": 1.0,
+     "weekend_share": 0.3585,
+     "q4_share": 0.3524,
+     "last_dow": 0.0
+    }
+   },
+   "unshifted": {
+    "leak_rate": 0.1856,
+    "offline_auc": 1.0,
+    "production_auc": 0.7154,
+    "match": {
+     "recency_days": 0.0014,
+     "frequency": 0.8144,
+     "monetary": 0.8144,
+     "freq_90d": 0.6658,
+     "spend_90d": 0.6216,
+     "tenure_days": 0.0,
+     "weekend_share": 0.3273,
+     "q4_share": 0.3387,
+     "last_dow": 0.0253
+    }
+   }
+  },
+  "-182": {
+   "shifted": {
+    "leak_rate": 0.0,
+    "offline_auc": 0.8205,
+    "production_auc": 0.8195,
+    "match": {
+     "recency_days": 1.0,
+     "frequency": 1.0,
+     "monetary": 1.0,
+     "freq_90d": 1.0,
+     "spend_90d": 1.0,
+     "tenure_days": 1.0,
+     "weekend_share": 1.0,
+     "q4_share": 0.8498,
+     "last_dow": 1.0
+    }
+   },
+   "unshifted": {
+    "leak_rate": 0.2445,
+    "offline_auc": 0.9975,
+    "production_auc": 0.77,
+    "match": {
+     "recency_days": 0.0016,
+     "frequency": 0.7555,
+     "monetary": 0.7555,
+     "freq_90d": 0.6693,
+     "spend_90d": 0.6339,
+     "tenure_days": 0.0,
+     "weekend_share": 0.8473,
+     "q4_share": 0.7996,
+     "last_dow": 0.7951
+    }
+   }
+  },
+  "-364": {
+   "shifted": {
+    "leak_rate": 0.0,
+    "offline_auc": 0.82,
+    "production_auc": 0.82,
+    "match": {
+     "recency_days": 1.0,
+     "frequency": 1.0,
+     "monetary": 1.0,
+     "freq_90d": 1.0,
+     "spend_90d": 1.0,
+     "tenure_days": 1.0,
+     "weekend_share": 1.0,
+     "q4_share": 0.9983,
+     "last_dow": 1.0
+    }
+   },
+   "unshifted": {
+    "leak_rate": 0.289,
+    "offline_auc": 0.9971,
+    "production_auc": 0.5349,
+    "match": {
+     "recency_days": 0.0012,
+     "frequency": 0.711,
+     "monetary": 0.711,
+     "freq_90d": 0.6919,
+     "spend_90d": 0.6728,
+     "tenure_days": 0.0,
+     "weekend_share": 0.8153,
+     "q4_share": 0.8823,
+     "last_dow": 0.7574
+    }
+   }
+  },
+  "-365": {
+   "shifted": {
+    "leak_rate": 0.0,
+    "offline_auc": 0.8183,
+    "production_auc": 0.8152,
+    "match": {
+     "recency_days": 1.0,
+     "frequency": 1.0,
+     "monetary": 1.0,
+     "freq_90d": 1.0,
+     "spend_90d": 1.0,
+     "tenure_days": 1.0,
+     "weekend_share": 0.6015,
+     "q4_share": 1.0,
+     "last_dow": 0.0
+    }
+   },
+   "unshifted": {
+    "leak_rate": 0.289,
+    "offline_auc": 0.9969,
+    "production_auc": 0.5303,
+    "match": {
+     "recency_days": 0.0012,
+     "frequency": 0.711,
+     "monetary": 0.711,
+     "freq_90d": 0.6921,
+     "spend_90d": 0.6729,
+     "tenure_days": 0.0,
+     "weekend_share": 0.5101,
+     "q4_share": 0.883,
+     "last_dow": 0.0435
+    }
+   }
+  }
+ },
+ "epoch_sweep": {
+  "weekly": {
+   "frequency_match": 0.6272,
+   "tenure_match": 0.6272,
+   "offline_auc": 0.797,
+   "production_auc": 0.8049
+  },
+  "monthly": {
+   "frequency_match": 0.6605,
+   "tenure_match": 0.6605,
+   "offline_auc": 0.798,
+   "production_auc": 0.8142
+  },
+  "quarterly": {
+   "frequency_match": 0.7205,
+   "tenure_match": 0.7205,
+   "offline_auc": 0.8021,
+   "production_auc": 0.815
+  },
+  "yearly": {
+   "frequency_match": 0.9739,
+   "tenure_match": 0.9739,
+   "offline_auc": 0.8056,
+   "production_auc": 0.8194
+  }
+ }
+}

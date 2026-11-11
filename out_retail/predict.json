@@ -1,0 +1,9 @@
+{
+ "tp": 28,
+ "fp": 0,
+ "fn": 0,
+ "tn": 26,
+ "cells": 6,
+ "decisions": 54,
+ "errors": []
+}

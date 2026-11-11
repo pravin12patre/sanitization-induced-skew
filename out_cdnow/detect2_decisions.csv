@@ -1,0 +1,49 @@
+sanitization,bug,monitor,kind,harmful,truth,plain,raw,matched,raw_miss,matched_miss,raw_false,matched_false
+none,window60,tfdv,code,True,"['freq_90d', 'spend_90d']",True,True,True,True,True,False,False
+none,window60,evidently,code,True,"['freq_90d', 'spend_90d']",True,True,True,True,True,False,False
+none,wrong_column,tfdv,code,True,"['monetary', 'spend_90d']",True,True,True,True,True,False,False
+none,wrong_column,evidently,code,True,"['monetary', 'spend_90d']",True,True,True,True,True,False,False
+none,retention365,tfdv,code,True,"['freq_90d', 'frequency', 'last_dow', 'monetary', 'q4_share', 'recency_days', 'spend_90d', 'tenure_days', 'weekend_share']",True,True,True,True,True,False,False
+none,retention365,evidently,code,True,"['freq_90d', 'frequency', 'last_dow', 'monetary', 'q4_share', 'recency_days', 'spend_90d', 'tenure_days', 'weekend_share']",True,True,True,True,True,False,False
+none,tz_shift,tfdv,code,True,"['recency_days', 'tenure_days']",False,False,False,False,False,False,False
+none,tz_shift,evidently,code,True,"['recency_days', 'tenure_days']",False,False,False,False,False,False,False
+none,hardcoded_start,tfdv,sanitization-dependent,False,[],False,False,False,False,False,False,False
+none,hardcoded_start,evidently,sanitization-dependent,False,[],False,False,False,False,False,False,False
+none,test_account_prefix,tfdv,sanitization-dependent,False,[],False,False,False,False,False,False,False
+none,test_account_prefix,evidently,sanitization-dependent,False,[],False,False,False,False,False,False,False
+rotate_incremental,window60,tfdv,code,True,"['freq_90d', 'spend_90d']",False,True,False,True,False,False,False
+rotate_incremental,window60,evidently,code,True,"['freq_90d', 'spend_90d']",True,True,False,True,False,False,False
+rotate_incremental,wrong_column,tfdv,code,True,"['monetary', 'spend_90d']",False,True,True,True,True,False,False
+rotate_incremental,wrong_column,evidently,code,True,"['monetary', 'spend_90d']",True,True,True,True,True,False,False
+rotate_incremental,retention365,tfdv,code,True,"['freq_90d', 'frequency', 'last_dow', 'monetary', 'q4_share', 'recency_days', 'spend_90d', 'tenure_days', 'weekend_share']",True,True,True,True,True,False,False
+rotate_incremental,retention365,evidently,code,True,"['freq_90d', 'frequency', 'last_dow', 'monetary', 'q4_share', 'recency_days', 'spend_90d', 'tenure_days', 'weekend_share']",True,True,True,True,True,False,False
+rotate_incremental,tz_shift,tfdv,code,True,"['recency_days', 'tenure_days']",False,False,False,False,False,False,False
+rotate_incremental,tz_shift,evidently,code,True,"['recency_days', 'tenure_days']",False,False,False,False,False,False,False
+rotate_incremental,hardcoded_start,tfdv,sanitization-dependent,False,[],False,False,False,False,False,False,False
+rotate_incremental,hardcoded_start,evidently,sanitization-dependent,False,[],False,False,False,False,False,False,False
+rotate_incremental,test_account_prefix,tfdv,sanitization-dependent,True,"['freq_90d', 'frequency', 'last_dow', 'monetary', 'q4_share', 'recency_days', 'spend_90d', 'tenure_days', 'weekend_share']",False,False,False,False,True,False,False
+rotate_incremental,test_account_prefix,evidently,sanitization-dependent,True,"['freq_90d', 'frequency', 'last_dow', 'monetary', 'q4_share', 'recency_days', 'spend_90d', 'tenure_days', 'weekend_share']",True,False,True,False,True,False,False
+shift_-100,window60,tfdv,code,True,"['freq_90d', 'spend_90d']",True,True,True,True,True,False,False
+shift_-100,window60,evidently,code,True,"['freq_90d', 'spend_90d']",True,True,True,True,True,False,False
+shift_-100,wrong_column,tfdv,code,True,"['monetary', 'spend_90d']",True,True,True,True,True,False,False
+shift_-100,wrong_column,evidently,code,True,"['monetary', 'spend_90d']",True,True,True,True,True,False,False
+shift_-100,retention365,tfdv,code,True,"['freq_90d', 'frequency', 'last_dow', 'monetary', 'q4_share', 'recency_days', 'spend_90d', 'tenure_days', 'weekend_share']",True,True,True,True,True,False,False
+shift_-100,retention365,evidently,code,True,"['freq_90d', 'frequency', 'last_dow', 'monetary', 'q4_share', 'recency_days', 'spend_90d', 'tenure_days', 'weekend_share']",True,True,True,True,True,False,False
+shift_-100,tz_shift,tfdv,code,True,"['recency_days', 'tenure_days']",False,False,False,False,False,False,False
+shift_-100,tz_shift,evidently,code,True,"['recency_days', 'tenure_days']",False,False,False,False,False,False,False
+shift_-100,hardcoded_start,tfdv,sanitization-dependent,True,"['freq_90d', 'frequency', 'last_dow', 'monetary', 'q4_share', 'recency_days', 'spend_90d', 'tenure_days', 'weekend_share']",True,False,True,False,True,False,False
+shift_-100,hardcoded_start,evidently,sanitization-dependent,True,"['freq_90d', 'frequency', 'last_dow', 'monetary', 'q4_share', 'recency_days', 'spend_90d', 'tenure_days', 'weekend_share']",True,False,True,False,True,False,False
+shift_-100,test_account_prefix,tfdv,sanitization-dependent,False,[],False,False,False,False,False,False,False
+shift_-100,test_account_prefix,evidently,sanitization-dependent,False,[],False,False,False,False,False,False,False
+observed_rotate+shift,window60,tfdv,code,True,"['freq_90d', 'spend_90d']",False,True,False,True,False,False,False
+observed_rotate+shift,window60,evidently,code,True,"['freq_90d', 'spend_90d']",True,True,False,True,False,False,False
+observed_rotate+shift,wrong_column,tfdv,code,True,"['monetary', 'spend_90d']",False,True,True,True,True,False,False
+observed_rotate+shift,wrong_column,evidently,code,True,"['monetary', 'spend_90d']",True,True,True,True,True,False,False
+observed_rotate+shift,retention365,tfdv,code,True,"['freq_90d', 'frequency', 'last_dow', 'monetary', 'q4_share', 'recency_days', 'spend_90d', 'tenure_days', 'weekend_share']",True,True,True,True,True,False,False
+observed_rotate+shift,retention365,evidently,code,True,"['freq_90d', 'frequency', 'last_dow', 'monetary', 'q4_share', 'recency_days', 'spend_90d', 'tenure_days', 'weekend_share']",True,True,True,True,True,False,False
+observed_rotate+shift,tz_shift,tfdv,code,True,"['recency_days', 'tenure_days']",False,False,False,False,False,False,False
+observed_rotate+shift,tz_shift,evidently,code,True,"['recency_days', 'tenure_days']",False,False,False,False,False,False,False
+observed_rotate+shift,hardcoded_start,tfdv,sanitization-dependent,True,"['freq_90d', 'frequency', 'last_dow', 'monetary', 'q4_share', 'recency_days', 'spend_90d', 'tenure_days', 'weekend_share']",True,False,True,False,True,False,False
+observed_rotate+shift,hardcoded_start,evidently,sanitization-dependent,True,"['freq_90d', 'frequency', 'last_dow', 'monetary', 'q4_share', 'recency_days', 'spend_90d', 'tenure_days', 'weekend_share']",True,False,True,False,True,False,False
+observed_rotate+shift,test_account_prefix,tfdv,sanitization-dependent,True,"['freq_90d', 'frequency', 'last_dow', 'monetary', 'q4_share', 'recency_days', 'spend_90d', 'tenure_days', 'weekend_share']",False,False,False,False,True,False,False
+observed_rotate+shift,test_account_prefix,evidently,sanitization-dependent,True,"['freq_90d', 'frequency', 'last_dow', 'monetary', 'q4_share', 'recency_days', 'spend_90d', 'tenure_days', 'weekend_share']",True,False,True,False,True,False,False
